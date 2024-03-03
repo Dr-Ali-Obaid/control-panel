@@ -1,0 +1,20 @@
+@import './config/layout.scss';
+@import './config/colors.scss';
+@import './config/variables.scss';
+
+@import './utilities/spacing.scss';
+
+@import './base/fonts.scss';
+@import './base/global.scss';
+@import './base/links.scss';
+@import './base/typography.scss';
+
+$bgc: yellow;
+
+
+body {
+    background-color: $bgc;
+}
+div>h1{
+    margin: space(extra-wide);
+}
