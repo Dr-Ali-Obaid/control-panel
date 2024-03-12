@@ -3,18 +3,20 @@
 @import './config/variables.scss';
 
 @import './utilities/spacing.scss';
+@import './utilities/mixen-card.scss';
 
 @import './base/fonts.scss';
 @import './base/global.scss';
 @import './base/links.scss';
 @import './base/typography.scss';
 
-$bgc: yellow;
+@import './components/demo.scss';
+@import './components/_components.scss';
+
+@import './components/icons/style.scss';
 
 
-body {
-    background-color: $bgc;
-}
-div>h1{
-    margin: space(extra-wide);
-}
+
+
+
+

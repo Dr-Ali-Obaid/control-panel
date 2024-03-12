@@ -1,0 +1,30 @@
+.c-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: space('extra-small') space('small');
+    box-shadow: 0 0 0 1px rgba(black, 0.05);
+}
+
+.c-list__media {
+    height: 60px;
+    width: auto;
+    margin-left: space('small');
+}
+
+.c-list__data {
+    flex-grow: 1;
+    margin-left: space('small');
+}
+
+.c-list__actions {
+    margin-right: auto;
+    margin-left: space('small');
+    text-align: left;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.c-list:hover .c-list__actions{
+    opacity: 1;
+}

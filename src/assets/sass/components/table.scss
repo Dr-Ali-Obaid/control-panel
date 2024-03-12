@@ -1,0 +1,76 @@
+$product-media-size :40px;
+
+.c-table {
+    @include e-card;
+    padding: 0 0 space(normal);
+    width: 100%;
+}
+
+.c-table__header {
+    display: flex;
+    align-items: baseline;
+    padding: 0 space(normal);
+    margin-bottom: space(small);
+}
+
+.c-table__navigation {
+    // margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-table__actions{
+    margin-left: auto;
+}
+.c-table__navigation__arrows {
+    margin-right: space(small);
+}
+
+.c-table__title {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: space(small);
+    padding-top: space(normal);
+}
+
+.c-table__data {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+
+    th {
+        text-align: right;
+    }
+
+    th,
+    td {
+        &:first-child {
+            padding-right: space(small);
+            width: 75px;
+        }
+
+        padding: space(extra-small);
+        border-bottom: 1px solid rgba(darken(white, 40%), 0.15);
+
+        img {
+            width: $product-media-size;
+            height: $product-media-size;
+            vertical-align: middle;
+        }
+    }
+}
+
+.c-table__footer {
+    display: flex;
+    padding: space(normal) 0 0 space(normal);
+    flex-flow: row-reverse;
+}
+
+.c-btn--icon {
+    font-size: 20px;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    padding: 0;
+}

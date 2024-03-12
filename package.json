@@ -16,6 +16,9 @@
   "author": "ali",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.10.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
@@ -32,6 +35,7 @@
     "webpack-dev-server": "^5.0.2"
   },
   "dependencies": {
+    "chart.js": "^4.4.2",
     "normalize.css": "^8.0.1"
   }
 }
