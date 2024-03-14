@@ -1,0 +1,22 @@
+.page-container {
+    padding-right: $layout-sidebar + space(normal);
+    padding-left: space(normal);
+}
+
+.main-page {
+    background-image: url('../images/confitti.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.home-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: space(extra-wide);
+    margin-bottom: space(wide);
+    flex-wrap: wrap;
+}
+.welcome-tag{
+    font-size: 24px;
+}

@@ -5,6 +5,10 @@
     background-color: white;
     padding: space('extra-small') space('small');
     box-shadow: 0 0 0 1px rgba(black, 0.05);
+
+    &--table-row{
+        display: table-row;
+    }
 }
 
 .c-list__media {
