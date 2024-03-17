@@ -21,7 +21,7 @@ module.exports = {
     filename: '[name].js',
     clean: true,
   },
-  devServer: {
+  devServer: { 
     static: {
       directory: path.join(__dirname, 'app'),
     },
@@ -31,6 +31,7 @@ module.exports = {
       writeToDisk: true,
     },
     open: true,
+   
   },
 
   module: {

@@ -1,4 +1,14 @@
-.c-upload + .c-form__control{
+.c-upload + .c-form__control {
     margin-right: space(wide);
     width: 500px;
+}
+
+@media (max-width: $bp-desktop-small) {
+    .c-form {
+        flex-wrap: wrap;
+    }
+    .c-upload + .c-form__control{
+        margin-right: 0;
+        
+    }
 }

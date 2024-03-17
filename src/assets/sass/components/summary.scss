@@ -3,6 +3,7 @@
     display: inline-flex;
     align-items: center;
     padding: space(small) space(wide);
+    flex-wrap: wrap;
 }
 
 .c-summary__data {
@@ -39,12 +40,16 @@
     margin-bottom: 0;
 }
 
-.c-summry--small{
+.c-summary--small{
     .c-summary__key, 
     .c-summary__value{
         font-size: 13px;
         font-weight: normal;
     }
+}
+.c-summary--spaceless{
+    padding-left: 0;
+    padding-right: 0;
 }
         
   

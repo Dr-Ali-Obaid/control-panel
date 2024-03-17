@@ -11,5 +11,5 @@ body{
     font-size: $font-base;
     line-height: $line-height;
     color: $color-content;
-    background-color: $color-background;
+    background-color: lighten($color-background, 15%);
 }

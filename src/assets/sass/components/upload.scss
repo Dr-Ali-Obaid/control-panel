@@ -1,7 +1,8 @@
+$upload-size: 400px;
 .c-upload {
     @include e-card;
-    min-width: 400px;
-    min-height: 400px;
+    min-width: $upload-size;
+    min-height: $upload-size;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,4 +115,10 @@ img{
     max-height: 100%;
     width: auto;
     margin: auto;
+}
+@media(max-width: $upload-size){
+    .c-upload{
+        min-width: initial;
+        width: 100%;
+    }
 }

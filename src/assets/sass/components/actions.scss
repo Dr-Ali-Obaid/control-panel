@@ -1,4 +1,5 @@
 $indicator-size: 10px;
+
 .c-actions {
     @include e-card;
     padding: 0 space(extra-small);
@@ -11,23 +12,49 @@ $indicator-size: 10px;
 
 .c-action {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: space(extra-small);
+    padding: calc(space('extra-small') / 2);
     border-bottom: 1px solid rgba(darken($color-brand, 40%), 0.1);
 
-    &:last-child{
+    &:last-child {
         border-bottom: none;
     }
 }
-.c-ation__title{
+
+.c-action__title {
     font-size: 14px;
-   margin-left: auto ;
+    margin-left: auto;
+    margin-top: calc(space('extra-small') / 2);
+    margin-bottom: calc(space('extra-small') / 2);
 }
-.c-action::before{
+
+.c-action::before {
     content: '';
     width: $indicator-size;
     height: $indicator-size;
     background-color: $color-primary;
     margin-left: space();
     border-radius: calc($indicator-size /2);
+}
+
+.c-actions--oneline {
+    .c-action {
+        flex-wrap: nowrap;
+        
+    }
+
+    .c-action__title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        
+        &:before{
+            position: absolute;
+            right: 0;
+            top: calc(50% - calc(#{$indicator-size}/2))
+        }
+
+    }
 }
